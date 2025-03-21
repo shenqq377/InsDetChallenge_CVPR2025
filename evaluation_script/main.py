@@ -184,20 +184,20 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         output["result"] = [
             {
                 "val_split":{
-                    "AP": res[0],
-                    "AP50": res[1],
-                    "AP75": res[2],
-                    "AP_easy": res_easy[0],
-                    "AP_hard": res_hard[0],
-                    "AP_small": res[3],
-                    "AP_medium": res[4],
-                    "AP_large": res[5],
-                    "AR_1": res[6],
-                    "AR_10": res[7],
-                    "AR_100": res[8],
-                    "AR_small": res[9],
-                    "AR_medium": res[10],
-                    "AR_large": res[11],
+                    "AP": res[0]*100,
+                    "AP50": res[1]*100,
+                    "AP75": res[2]*100,
+                    "AP_easy": res_easy[0]*100,
+                    "AP_hard": res_hard[0]*100,
+                    "AP_small": res[3]*100,
+                    "AP_medium": res[4]*100,
+                    "AP_large": res[5]*100,
+                    "AR_1": res[6]*100,
+                    "AR_10": res[7]*100,
+                    "AR_100": res[8]*100,
+                    "AR_small": res[9]*100,
+                    "AR_medium": res[10]*100,
+                    "AR_large": res[11]*100,
                 }
             }
         ]
@@ -217,20 +217,20 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         output["result"] = [
             {
                 "test_split":{
-                    "AP": res[0],
-                    "AP50": res[1],
-                    "AP75": res[2],
-                    "AP_easy": res_easy[0],
-                    "AP_hard": res_hard[0],
-                    "AP_small": res[3],
-                    "AP_medium": res[4],
-                    "AP_large": res[5],
-                    "AR_1": res[6],
-                    "AR_10": res[7],
-                    "AR_100": res[8],
-                    "AR_small": res[9],
-                    "AR_medium": res[10],
-                    "AR_large": res[11],
+                    "AP": res[0]*100,
+                    "AP50": res[1]*100,
+                    "AP75": res[2]*100,
+                    "AP_easy": res_easy[0]*100,
+                    "AP_hard": res_hard[0]*100,
+                    "AP_small": res[3]*100,
+                    "AP_medium": res[4]*100,
+                    "AP_large": res[5]*100,
+                    "AR_1": res[6]*100,
+                    "AR_10": res[7]*100,
+                    "AR_100": res[8]*100,
+                    "AR_small": res[9]*100,
+                    "AR_medium": res[10]*100,
+                    "AR_large": res[11]*100,
                 }
             }
         ]
