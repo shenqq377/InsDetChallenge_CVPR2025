@@ -178,8 +178,14 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         gt_dic, gt_easy, gt_hard, submission_dic, submission_easy, submission_hard = read_json(test_annotation_file, user_submission_file)
         
         res = get_precisions(gt_dic, submission_dic) # all 160 imgs
-        res_easy = get_precisions(gt_easy, submission_easy)# easy scenes
-        res_hard = get_precisions(gt_hard, submission_hard)# hard scenes
+        if submission_easy == []:
+            res_easy = [0.0]
+        else:
+            res_easy = get_precisions(gt_easy, submission_easy)# easy scenes
+        if submission_hard == []:
+            res_hard = [0.0]
+        else:
+            res_hard = get_precisions(gt_hard, submission_hard)# hard scenes
         
         output["result"] = [
             {
@@ -211,8 +217,14 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         gt_dic, gt_easy, gt_hard, submission_dic, submission_easy, submission_hard = read_json(test_annotation_file, user_submission_file)
         
         res = get_precisions(gt_dic, submission_dic) # all 160 imgs
-        res_easy = get_precisions(gt_easy, submission_easy)# easy scenes
-        res_hard = get_precisions(gt_hard, submission_hard)# hard scenes
+        if submission_easy == []:
+            res_easy = [0.0]
+        else:
+            res_easy = get_precisions(gt_easy, submission_easy)# easy scenes
+        if submission_hard == []:
+            res_hard = [0.0]
+        else:
+            res_hard = get_precisions(gt_hard, submission_hard)# hard scenes
         
         output["result"] = [
             {
